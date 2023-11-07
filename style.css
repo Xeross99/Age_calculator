@@ -18,6 +18,10 @@ body {
 }
 
 .container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     max-width: 700px;
     background-color: rgb(255, 255, 255);
     border-radius: 20px 20px 200px 20px;
@@ -107,6 +111,9 @@ b {
     
     .container {
         width: 100%;
+        transform: translate(0%, 0%);
+        top: 0;
+        left: 0;
     }
     .mid {
         margin: 40px 0px;

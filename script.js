@@ -1,5 +1,4 @@
 function saveData() {
-
     //font css
     let label1 = document.getElementById("1");
     let label2 = document.getElementById("2");
@@ -21,16 +20,8 @@ function saveData() {
     let mm = today.getMonth() + 1
     let yyyy = today.getFullYear();
 
-    //console test
-    console.log(`Input 1: ${day}`);
-    console.log(`Input 2: ${month}`);
-    console.log(`Input 3: ${year}`);
-    console.log(`Aktualny dzień: ${dd}`);
-    console.log(`Aktualny miesiac: ${mm}`);
-    console.log(`Aktualny rok: ${yyyy}`);
-
-    //Wrong data
     if ((day > 31 || day < 1) || (month > 21 || month < 1) || (year > `${yyyy}` || year < 1)) {
+        //Wrong data
         label1.style.color = "red";
         label2.style.color = "red";
         label3.style.color = "red";
@@ -66,5 +57,4 @@ function saveData() {
         document.getElementById("months").innerHTML = `${mm}` - `${month}`;
         document.getElementById("years").innerHTML = `${yyyy}` - `${year}`;
     }
-
 }
